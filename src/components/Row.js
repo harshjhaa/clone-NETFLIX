@@ -69,7 +69,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
             <div className="row-posters">
                 {getPosters()}
             </div>
-            {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+            <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+            </div>
         </div>
     )
 }
